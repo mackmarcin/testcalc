@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+
+<html ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+        <script src="main-a.js"></script>
+        <title>My AngularJS App</title>
+    </head>
+    <body ng-controller="AppCtrl as ctrl">
+        <input ng-model="v1" />
+        <input ng-model="v2" />
+
+        <button type="button" ng-click="calculate('+')">+</button>
+        <button type="button" ng-click="calculate('-')">-</button>
+        <button type="button" ng-click="calculate('*')">*</button>
+        <button type="button" ng-click="calculate('/')">/</button>
+
+        <div>{{ result }}</div>
+    </body>
+</html>
